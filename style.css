@@ -1,0 +1,147 @@
+:root{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%)
+}
+
+body{
+    background-color: var(--transparent-white);
+    font-size: 15px;
+}
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    margin-block-start: 90px;
+    width: 350px;
+    height: 500px;
+    margin-bottom: 30px;
+}
+
+.car-icon{
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
+.sedans{
+    background-color: var(--bright-orange);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.suvs{
+    background-color: var(--dark-cyan);
+}
+
+.luxury{
+    background-color: var(--very-dark-cyan);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+h2{
+    max-width: 200px;
+    margin-left: 60px;
+    margin-top: 50px;
+    margin-right: 60px;
+
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 43px;
+
+    color: var(--very-light-gray);
+}
+
+p{
+    max-width: 200px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 50px;
+    font-family: 'Lexend Deca', sans-serif;
+
+    color: var(--transparent-white);
+}
+button{
+    width: 150px;
+    height: 50px;
+    margin-left: 60px;
+    border-radius: 30px;
+
+    background-color: var(--transparent-white);
+    border: unset;
+
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.btn-sedans{
+    color: var(--bright-orange);
+}
+.btn-suvs{
+    color: var(--dark-cyan);
+}
+.btn-luxury{
+    color: var(--very-dark-cyan);
+}
+
+.btn-sedans:hover{
+    border: 3px solid var(--transparent-white);
+    background-color: var(--bright-orange);
+    color: var(--transparent-white);
+}
+
+.btn-suvs:hover{
+    border: 3px solid var(--transparent-white);
+    background-color: var(--dark-cyan);
+    color: var(--transparent-white);
+}
+.btn-luxury:hover{
+    border: 3px solid var(--transparent-white);
+    background-color: var(--very-dark-cyan);
+    color: var(--transparent-white);
+}
+
+footer{
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--very-dark-cyan);
+}
+
+@media screen and (max-width:810px) {
+
+
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box{
+        margin-top: 50px;
+        width: 350px;
+        height: 500px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .sedans{
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .suvs{
+        margin-top: -50px;
+    }
+
+    .luxury{
+        margin-top: -50px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 0px;
+
+    }
+}
